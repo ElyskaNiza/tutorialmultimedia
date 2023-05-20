@@ -1,0 +1,173 @@
+<html>
+<head>
+<title> index </title>
+</head>
+<body bgcolor="#F2C5E0">
+
+<hr color="#EC8FD0" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b> 
+TAYLOR SWIFT : LOVER ALBUM
+</b></p>
+</center>
+<hr color="#EC8FD0" size="10">
+
+<!--- INSERTING VIDEO --->
+<video width="100%" video controls autoplay muted loop>
+<source src="video/lover.mp4" type="video/mp4">
+</video>
+
+<br><br><br><br><br>
+
+<hr color="#EC8FD0" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+MOST FAVOURITE SONG : CRUEL SUMMERS
+</b></p>
+</center>
+<hr color="#EC8FD0" size="10">
+
+<br><br>
+
+<!--- INSERTING VIDEO --->
+<center>
+<video controls width="55%">
+<source src="video/cruel_summer.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br>
+
+<!--- APPLYING MARQUEE ---->
+
+<hr color="#EC8FD0" size="10">
+<marquee direction="right" scrollamount="25"> 
+<p style="font-size:30px" font="Times New Roman"><b>
+<h1> MOTIVATION </h1>
+</b></p>
+</marquee>
+<hr color="#EC8FD0" size="10">
+
+<br>
+
+<center>
+<iframe width="420" height="345" src= "https://www.youtube.com/embed/hB509J81cWc">
+</iframe>
+</center>
+
+<br><br><br><br><br>
+
+<!--- APPLYING MARQUEE ---->
+
+<hr color="#EC8FD0" size="10">
+<marquee direction="right" scrollamount="25"> 
+<p style="font-size:30px" font="Times New Roman"><b>
+<h1> DEVELOPMENT </h1>
+</b></p>
+</marquee>
+<hr color="#EC8FD0" size="10">
+
+<br>
+
+<center>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/1KCffitiemc">
+</iframe>
+</center>
+
+<br><br><br><br><br>
+
+<!--- EMBEDDING PDF FILE ---->
+
+<hr color="#EC8FD0" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+SELF-DEVELOPMENT BOOK
+<hr color="#EC8FD0" size="10">
+</center>
+</b></p>
+
+<br><br>
+
+<center>
+<iframe src="asset/pdf/book.pdf" width="60%" height="700px">
+</iframe>
+</center>
+
+<br><br><br><br><br>
+
+<hr color="#EC8FD0" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+MY FAVOURITE PLAYLIST
+<hr color="#EC8FD0" size="10">
+</center>
+</b></p>
+
+<br><br>
+<center>
+<br>
+<audio controls>
+<source src="asset/audio/Scars.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls>
+<source src="asset/audio/Limbo.mp3" type="audio/mp3">
+</audio>
+<br><br>
+</center>
+
+<br><br><br><br><br>
+
+<!---JAVA APPLET---> 
+
+<!---to call the css---> 
+
+   <div id="clock"> 8:10:45 </div>
+
+<!---to link to the current time---> 
+ 
+   <script src="clock2.js"></script>
+
+<script> 
+setInterval(showTime, 1000);
+function showTime() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  am_pm = "AM";
+
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+  }
+  if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+  }
+
+  hour = hour < 10 ? "0" + hour : hour;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  let currentTime = hour + ":"
+      + min + ":" + sec + am_pm;
+
+  document.getElementById("clock")
+      .innerHTML = currentTime;
+}
+showTime();
+</center>
+</script>
+
+<br><br>
+
+<hr color="#EC8FD0" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+THANK YOU FOR YOUR ATTENTION
+<hr color="#EC8FD0" size="10">
+</b></p>
+
+</body>
+<html>
